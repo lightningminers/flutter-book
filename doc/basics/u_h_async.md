@@ -48,7 +48,7 @@ httpClient.getUrl(Uri.parse(githubURL)).then((HttpClientRequest request){
 });
 ```
 
-是不是有一种和 Promise 非常类似的感觉？其实 getUrl 返回的是一个 Future<HttpClientRequest>，你可以把它理解为前端的 Promise。只不过在 Dart 的世界里 Future 是它来表示异步操作的的方式，事件循环和线程队列真是一个很神奇的设计，我们又遇到了它。
+是不是有一种和 Promise 非常类似的感觉？其实 getUrl 返回的是一个 Future<HttpClientRequest>，你可以把它理解为前端的 Promise。只不过在 Dart 的世界里 Future 是它来表示异步操作的的方式，**事件循环**和**线程队列**真是一个很神奇的设计，我们又遇到了它。
 
 那么，我们还有没有更直观的方案来处理异步操作？
 
