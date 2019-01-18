@@ -8,6 +8,8 @@
   * [为 JavaScript 开发人员准备的 Dart 参考教程](./basics/u_t_javascript.md)
   * [你不可避免的 Flutter Routes](./basics/u_f_routes.md)
   * [谈谈 Flutter 中的请求和异步](./basics/u_h_async.md)
+  * [对 Flutter JSON序列化的一些理解](./basics/u_s_json.md)
 * Native
+  * [将 Flutter 集成到已有的iOS工程中](./native/integrated_ios_flutter.md)
 * 渐进增强
   * [Flutter 调试技巧](./upday/debug.md)
