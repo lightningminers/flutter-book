@@ -35,3 +35,11 @@
 另外 Android Studio 中默认就安装了 Dart Analysis ，这个工具能辅助我们完成有问题代码的分析并且给出建议，当然VSCode中也有这样的功能，但是不知道为什么个人感觉Android Studio中提供的更完善和强大。如果你是Android 开发，在调试技巧这个层面上，我想你应该比前端开发人员拥有更多的优势，因为 Android Studio 做为你“吃饭”的家伙，肯定已经玩的很溜了。
 
 说了这么多，调试最重要的还是细心和耐心，没有这两颗心，人一躁起来问题就很难解决了；
+
+> 善用 issues ，大部分问题都能在这里检索到答案。
+
+举个例子当你使用 BottomNavigationBar 添加超过三个 items 时 navigation bar 会渲染成一个白板，如图：
+
+![](../images/flutter-22.png)
+
+其实答案就在 [https://github.com/flutter/flutter/issues/13642](https://github.com/flutter/flutter/issues/13642)；
