@@ -32,7 +32,7 @@
 
 - 只有一个元素 child 的布局 Widget，比如 Container
 - 可以 add 多个子元素 children 的布局 Widget，比如 Row
-- 类似 layout helper 布局，比较典型的如 ListView
+- 类似 layout helper 布局，比较典型的如 ListView
 
 ### box constraints
 
