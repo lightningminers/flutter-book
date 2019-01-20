@@ -15,3 +15,4 @@
   * [谈谈 Flutter 的通信和插件](./native/bridge_ios.md)
 * 渐进增强
   * [Flutter 调试技巧](./upday/debug.md)
+  * [对于抽象 Widget 的意义](./upday/mix.md)
