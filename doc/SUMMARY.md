@@ -16,3 +16,4 @@
 * 渐进增强
   * [Flutter 调试技巧](./upday/debug.md)
   * [对于抽象 Widget 的意义](./upday/mix.md)
+  * [详解 pubspec.yaml 包管理](./upday/package_manage.md)
