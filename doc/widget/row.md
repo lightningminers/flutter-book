@@ -2,7 +2,7 @@
 
 > A widget that displays its children in a horizontal array.
 
-Row 的布局行为继承于 Flex，我们可以完全按照 Web 中的 Flex 来参考，包括主轴，交叉轴等概念。
+Row 的布局行为继承于 Flex，因此我们完全可以按照 Web 中的 Flex 来参考，包括主轴，交叉轴等概念。
 
 通过构造函数我们可以看到它们的默认值；
 
