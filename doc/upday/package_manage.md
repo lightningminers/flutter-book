@@ -38,7 +38,12 @@ dependencies:
 
 多数情况下也许我们需要开发一个自己的包，因为从代码的设计角度上来说，这种分离非常有意义，让我们来看一看如何发布一个包，一个最小的包结构如图：
 
-![](../images/flutter-25.png)
+```bash
+root directory
+  - lib
+    - main.dart
+  - pubspec.yaml
+```
 
 你需要一个 pubspec.yaml 和 一个 lib 目录
 
@@ -66,7 +71,19 @@ flutter:
 
 理想情况下一个包应该还要有它的测试用例，我们应该遵循官方给出的设计目录结构。
 
-![](../images/flutter-26.png)
+```bash
+root directory
+  - example
+  - lib
+    - src
+      - ...
+    - shelf.dart
+    - shelf_io.dart
+  - test
+    - a variety of tests
+  - tool
+    travis.sh
+```
 
 当我们的包有多个文件时，你应该在 main.dart 中指定 library 然后导出这些文件，比如：
 
