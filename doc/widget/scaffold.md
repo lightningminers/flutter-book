@@ -96,7 +96,7 @@ class AVScaffold extends StatelessWidget {
 }
 ```
 
-最后让我们来看一看 bottom sheets ，这个效果其实和前端里的 position: fixed 很类似，当你有一个输入框想输入一些文本时，为了让键盘不遮挡它，你可以使用 bottomSheet 快速实现一个这样的效果，为了能让例子更生动一些，我大概加了些别的 Widget，如图：
+最后让我们来看一看 bottom sheets ，这个效果其实和前端里的 position: fixed 很类似，当你有一个输入框想输入一些文本时，为了让键盘不遮挡它，你可以使用 bottomSheet 快速实现一个这样的效果，为了能让例子更生动一些，我使用了一些别的 Widget组合而成，如图：
 
 ![](../images/flutter-45.gif)
 
