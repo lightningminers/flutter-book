@@ -16,6 +16,7 @@
   * [Scaffold](./widget/scaffold.md)
   * [Container](./widget/container.md)
   * [Padding，Align 和 Center](./widget/paddingaligncenter.md)
+  * [Dialog](./widget/dialog.md)
 * Native
   * [将 Flutter 集成到已有的 iOS 工程中](./native/integrated_ios_flutter.md)
   * [谈谈 Flutter 的通信和插件](./native/bridge_ios.md)
