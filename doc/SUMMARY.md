@@ -25,3 +25,4 @@
   * [对于抽象 Widget 的意义](./upday/mix.md)
   * [详解 pubspec.yaml 包管理](./upday/package_manage.md)
   * [Flex 源码解读](./upday/flex.md)
+  * [在 Flutter 使用 Redux 来共享状态和管理单一数据](./upday/redux.md)
