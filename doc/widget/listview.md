@@ -183,3 +183,5 @@ class AVListView extends StatelessWidget {
   }
 }
 ```
+
+![](../images/flutter-60.gif)
