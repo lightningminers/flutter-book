@@ -10,6 +10,7 @@
   * [谈谈 Flutter 的请求和异步](./basics/u_h_async.md)
   * [对 Flutter JSON序列化的一些理解](./basics/u_s_json.md)
   * [Flutter 布局的一些思考](./basics/u_f_layout.md)
+  * [Flutter 的生命周期]()
 * 常用 Widget 详解
   * [Row](./widget/row.md)
   * [Column](./widget/column.md)
@@ -30,3 +31,5 @@
   * [详解 pubspec.yaml 包管理](./upday/package_manage.md)
   * [Flex 源码解读](./upday/flex.md)
   * [在 Flutter 中使用 Redux 来共享状态和管理单一数据](./upday/redux.md)
+  * [使用 Stream 简单更新 UI](./upday/stream.md)
+  * [在 Flutter 中使用 Bloc 来处理数据并更新 UI](./upday/bloc.md)
