@@ -1,6 +1,6 @@
 ## Transform
 
-> 
+> A widget that applies a transformation before painting its child.
 
 Transform 作为一个很常用的处理 Widget 形变的 Widget 通常会使用在动画中，通过这个 Widget 的组合，就像 CSS 中的 transform 属性一样，我们可以很方便的做出来动效，先让我们来看一个小例子：
 
