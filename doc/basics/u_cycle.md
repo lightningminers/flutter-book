@@ -1,4 +1,4 @@
-## Flutter 的生命周期
+## 详解 Flutter 生命周期
 
 如果你写过 iOS 了解过 ViewController 那么其实能够了解生命周期在 UI 绘制的场景中是多么有用，Flutter 也存在生命周期，只不过它的回调方法都体现在 State 中，源码可参考：[https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/framework.dart#L930](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/framework.dart#L930)，对于我们理解生命周期，写出一个合理的 Widget 至关重要。
 
