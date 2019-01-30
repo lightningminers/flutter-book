@@ -301,7 +301,7 @@ void main() {
 }
 ```
 
-Dart 中的命名构造函数和 JavaScript 中的静态方法
+静态方法&静态属性
 
 *JavaScript*
 
@@ -311,7 +311,32 @@ class Icepy {
     return 'static method has been called.';
   }
 }
+
+Icepy.xx = '1'
+Icepy.staticMethods = () => {}
 ```
+
+*Dart*
+
+```dart
+class Icepy{
+  static const initialCapacity = 16;
+  static void say(){
+    print('1');
+  }
+}
+
+void main() {
+  print(Icepy.initialCapacity);
+  Icepy.say();
+}
+```
+
+命名构造函数
+
+*JavaScript*
+
+无；
 
 *Dart*
 
