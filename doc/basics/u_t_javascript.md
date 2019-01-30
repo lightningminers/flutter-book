@@ -173,7 +173,7 @@ String dd() => 'dd';
 
 ## 模块导入和导出
 
-JavaScript 使用 import 和 export 来导入导出模块，Dart 也使用了 import 来导入模块，只不过它和 JavaScript 有一个显著的区别，Dart 并不需要使用 export 来导出模块。
+JavaScript 使用 import 和 export 来导入导出模块，Dart 也使用了 import 来导入模块，只不过它和 JavaScript 有一个显著的区别，Dart 并不需要使用 export 来导出模块，如果你的 library 有很多文件组成，那么还是需要使用 export 来导出这些文件。
 
 *javascript*
 
