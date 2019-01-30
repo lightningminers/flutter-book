@@ -578,6 +578,8 @@ void main() {
 ```javascript
 new Promise((resolve, reject) => {
   resolve(1)
+}).then((ddd) => {
+  console.log(ddd);
 })
 ```
 
