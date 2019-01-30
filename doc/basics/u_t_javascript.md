@@ -139,6 +139,39 @@ PrintString(dd);
 
 ```
 
+## 枚举
+
+*JavaScript*
+
+JavaScript 并没有定义枚举关键字，不过你可以使用对象的方式来代替。
+
+```javascript
+const Color = {
+  red: 0,
+  green: 1,
+  blue: 2
+}
+```
+
+*Dart*
+
+```dart
+enum Color { red, green, blue }
+
+var aColor = Color.blue;
+
+switch (aColor) {
+  case Color.red:
+    print('Red as roses!');
+    break;
+  case Color.green:
+    print('Green as grass!');
+    break;
+  default: // Without this, you see a WARNING.
+    print(aColor); // 'Color.blue'
+}
+```
+
 ## 字符串模板
 
 JavaScript 的模板和 Dart 一样，都是一个表达式；
@@ -197,7 +230,7 @@ import 'package:xxx/xxx' as myxxx; //给导出的模块加上别名
 
 ## 类
 
-为了更好的用语言来描述你的程序，类就是这样一个很好的媒介，与 JavaScript 非常一致的是 Dart 也使用 class 来定义一个类，使用 extends 来完成继承，与 JavaScript 不同的是 Dart 有更为丰富的功能；
+为了更好的用语言来描述你的程序，类就是这样一个很好的媒介，与 JavaScript 非常一致的是 Dart 也使用 class 来定义一个类，使用 extends 来完成继承，与 JavaScript 不同的是 Dart 有更为丰富的功能；
 
 构造函数
 
@@ -338,7 +371,7 @@ void main() {
 }
 ```
 
-Factory 关键字修饰的工厂函数
+Factory 关键字修饰的工厂函数
 
 *JavaScript*
 
