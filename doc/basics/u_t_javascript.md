@@ -569,4 +569,32 @@ void main() {
 }
 ```
 
+## 异步
+
+对于现代 JavaScript 来说它的异步基石是 Promise ，那么在 Dart 中也有对应的方案，并且还有更有效的方式，比如 Stream。
+
+*JavaScript*
+
+```javascript
+new Promise((resolve, reject) => {
+  resolve(1)
+})
+```
+
+*Dart*
+
+```dart
+import 'dart:async';
+
+void main(){
+  Future<String> doing() async{
+    return 'icepy';
+  }
+  Future<String> dingFuture = new Future(doing);
+  dingFuture.then((ddd){
+    print(ddd);
+  });
+}
+```
+
 当然 JavaScript 也有很多它比较独特的特性，这就不一一列举了，更多的 Dart 特性需要你在使用的过程中慢慢学习了，当我们使用 Flutter 的过程中 @override 也许是我们使用的最多的特性之一。
