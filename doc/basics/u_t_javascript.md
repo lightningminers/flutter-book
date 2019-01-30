@@ -220,6 +220,28 @@ class Icepy {
 }
 ```
 
+调用父类
+
+*JavaScript*
+
+```javascript
+class Icepy extends Ps{
+  constructor(a){
+    super();
+    this.a = a;
+  }
+}
+```
+
+*Dart*
+
+```dart
+class Employee extends Person {
+  Employee() : super.fromJson(getDefaultData());
+  // ···
+}
+```
+
 构造函数参数默认值
 
 *JavaScript*
@@ -243,6 +265,38 @@ class Icepy {
 void main() {
   final i = new Icepy();
   print(i.a);
+}
+```
+
+Dart 中的命名构造函数和 JavaScript 中的静态方法
+
+*JavaScript*
+
+```javascript
+class Icepy {
+  static staticMethod() {
+    return 'static method has been called.';
+  }
+}
+```
+
+*Dart*
+
+```dart
+class Icepy {
+  int a;
+  Icepy({this.a = 1});  
+  Icepy.stt(){
+    print('2');
+  }
+  void say(){
+    print('3');
+  }
+}
+
+void main() {
+  final d = Icepy.stt();
+  d.say();
 }
 ```
 
@@ -272,6 +326,10 @@ class Icepy {
   void say(){
     print(this.a);
   }
+
+  String backStr(){
+    return 'hello';
+  }
 }
 
 void main() {
@@ -280,35 +338,45 @@ void main() {
 }
 ```
 
-定义静态方法
+Factory 关键字修饰的工厂函数
 
 *JavaScript*
 
-```javascript
-class Icepy {
-  static staticMethod() {
-    return 'static method has been called.';
-  }
-}
-```
+无；
 
 *Dart*
 
 ```dart
-class Icepy {
-  int a;
-  Icepy({this.a = 1});  
-  Icepy.stt(){
-    print('2');
+class Logger {
+  final String name;
+  bool mute = false;
+  static final Map<String, Logger> _cache =
+      <String, Logger>{};
+
+  factory Logger(String name) {
+    if (_cache.containsKey(name)) {
+      return _cache[name];
+    } else {
+      final logger = Logger._internal(name);
+      _cache[name] = logger;
+      return logger;
+    }
+  }
+
+  Logger._internal(this.name);
+
+  void log(String msg) {
+    if (!mute) print(msg);
   }
 }
 
 void main() {
-  Icepy.stt();
+ var logger = Logger('UI');
+ logger.log('Button clicked');
 }
 ```
 
-getter&setter
+Getter&Setter
 
 *JavaScript*
 
@@ -346,6 +414,28 @@ void main() {
 }
 
 ```
+
+抽象类&抽象方法
+
+*JavaScript*
+
+无；
+
+*Dart*
+
+```dart
+abstract class Doer{
+  void doing();
+}
+
+class EffeDoer extends Doer{
+  void doing(){
+
+  }
+}
+```
+
+抽象方法特别适合用于让实现者实现的某些事情；
 
 重写
 
@@ -392,12 +482,33 @@ void main(){
 
 ```
 
-当然 JavaScript 也有很多它比较独特的特性，这就不一一列举了，更多的 Dart 特性需要你在使用的过程中慢慢学习了，比如：
+接口
 
-- 抽象方法
-- 抽象类
-- 隐式接口
-- ...
+*JavaScript*
 
-在我们使用 Flutter 的过程中 @override 应该是我们使用的最多的特性之一；
+无；
 
+*Dart*
+
+```dart
+class Person {
+  final _name;
+  Person(this._name);
+  String greet(String who) => 'Hello, $who. I am $_name.';
+}
+
+class Impostor implements Person {
+  get _name => '';
+
+  String greet(String who) => 'Hi $who. Do you know who I am?';
+}
+
+String greetBob(Person person) => person.greet('Bob');
+
+void main() {
+  print(greetBob(Person('Kathy')));
+  print(greetBob(Impostor()));
+}
+```
+
+当然 JavaScript 也有很多它比较独特的特性，这就不一一列举了，更多的 Dart 特性需要你在使用的过程中慢慢学习了，当我们使用 Flutter 的过程中 @override 也许是我们使用的最多的特性之一。
