@@ -33,3 +33,4 @@
   * [在 Flutter 中使用 Redux 来共享状态和管理单一数据](./upday/redux.md)
   * [使用 Stream 简单更新 UI](./upday/stream.md)
   * [在 Flutter 中使用 Bloc 来处理数据并更新 UI](./upday/bloc.md)
+  * [关于 Flutter 本地存储的一些事](./upday/storage.md)
