@@ -6,7 +6,7 @@
 
 ![](../images/flutter-71.gif)
 
-基本上你需要改动的地方有：
+在 ios 目录下打开 Runner.xcworkspace，基本上你需要改动的地方可能有：
 
 - Display Name 也就是你的应用名称
 - Bundle identifier 唯一的 bundle ID
