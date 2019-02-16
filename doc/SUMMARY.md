@@ -25,6 +25,7 @@
 * Native
   * [将 Flutter 集成到已有的 iOS 工程中](./native/integrated_ios_flutter.md)
   * [谈谈 Flutter 的通信和插件](./native/bridge_ios.md)
+  * [将 Flutter 应用发布到 iOS 平台](./native/archive_ios.md)
 * 渐进增强
   * [Flutter 调试技巧](./upday/debug.md)
   * [对于抽象 Widget 的意义](./upday/mix.md)
